@@ -1,19 +1,15 @@
-#include <iostream>
+#include <iostream> 
 using namespace std;
-
-int main() {
-    int a , b ,addition,subtraction,multiplication;
-    cout << "enter the first number:";
-    cin >> a;
-
-    cout << "enter second number:";
-    cin >> b;
-    addition = a + b;
-    subtraction=a -b;
-    multiplication=a*b;
-
-
-    cout << "addition= " << addition << endl;
-    cout << "subtraction= " << subtraction << endl;
-    cout << "multiplication= " << multiplication << endl;
+int main () {
+int marks;
+cout << "Enter your marks: "; cin >> marks;
+if (marks>=90){
+cout << "Grade A";
+}else if (marks>=75 && marks<90){ cout << "Grade B";
+}else if (marks>=50 && marks<75){ cout << "Grade C";
+}else if (marks>=35 && marks<50){ cout << "Grade D";
+}else{
+cout << "fail";
+}
+return 0;
 }
